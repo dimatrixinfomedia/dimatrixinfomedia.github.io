@@ -10,7 +10,6 @@
 		
       <script type = "text/javascript" language = "javascript">
          $(document).ready(function() {
-		 $("#message").html("");
 		 
             $("#submit").click(function(event){
                // Do global setting.
@@ -48,6 +47,7 @@
                 };
 
                 $.ajax(settings).done(function (response) {
+                $("#message").html("");
                 $("#message").append(JSON.stringify(response));
                 });
 
