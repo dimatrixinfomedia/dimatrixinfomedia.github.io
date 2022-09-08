@@ -1,0 +1,225 @@
+<html>
+
+   <head>
+      <title>Dimatrix Info Media</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		
+      <script type = "text/javascript" language = "javascript">
+         $(document).ready(function() {
+			
+            $("#submit").click(function(event){
+               // Do global setting.
+
+                var form = new FormData();
+                form.append("post_key", "62decccd13536");
+                form.append("offer_id", "10908");
+                form.append("first_name", "Adarsh");
+                form.append("last_name", "Mittal");
+                form.append("email", "adarsh.mittal@dimatrixcorp.com");
+                form.append("job_title", "Director Technology");
+                form.append("company", "Dimatrix Info Media");
+                form.append("phone", "760-335-6236");
+                form.append("ip", "192.0.0.0");
+                form.append("privacy", "yes");
+                form.append("industry", "IT");
+                form.append("address1", "NJ");
+                form.append("city", "NJ");
+                form.append("zip", "12345");
+                form.append("state", "NJ");
+                form.append("country", "United States");
+                form.append("interest_demo", "Yes");
+                form.append("timeframe", "Less than 1 month");
+                form.append("company_size", "1-19");
+
+                var settings = {
+                "url": "https://offers.optimalfusion.com/post_offer_form.php",
+                "method": "POST",
+                "timeout": 0,
+                "processData": false,
+                "mimeType": "multipart/form-data",
+                "contentType": false,
+                "data": form
+                };
+
+                $.ajax(settings).done(function (response) {
+                console.log(response);
+                });
+
+                $.ajax(settings).error(function (response) {
+                console.log(response);
+                });
+
+            });
+         });
+      </script>
+   </head>
+	
+   <body>
+    <div class="container">
+        <h2>Dummy Header</h2>
+        <p>Dummy Text</p>
+        <form class="form-inline">
+            <div class="form-group">
+                <label class="" for="post_key">Post Key:</label>
+                <input type="text" class="form-control" id="post_key" placeholder="Post Key"  name="post_key" value="62decccd13536" disabled maxlength="13">
+              </div>
+
+              <div class="form-group">
+                <label class="" for="offer_id">Campaign ID:</label>
+                <select class="form-control" id="offer_id">
+                    <option>10908</option>
+                    <option>10911</option>
+                    <option>10912</option>
+                    <option>19013</option>
+                    <option>10914</option>
+                    <option>10915</option>
+                    <option>19016</option>
+                    <option>19017</option>
+                  </select>
+              </div>
+
+            <div class="form-group">
+                <label class="" for="first_name">First Name:</label>
+                <input type="text" class="form-control" id="first_name" placeholder="First Name"  name="first_name" maxlength="50">
+            </div>
+            
+            <div class="form-group">
+                <label class="" for="last_name">Last Name:</label>
+                <input type="text" class="form-control" id="last_name" placeholder="First Name"  name="last_name" maxlength="50">
+            </div>
+            
+            <div class="form-group">
+                <label class="" for="email">Business Email:</label>
+                <input type="text" class="form-control" id="email" placeholder="Business Email"  name="email" maxlength="50">
+            </div>
+            
+            <div class="form-group">
+                <label class="" for="job_title">Job Title:</label>
+                <input type="text" class="form-control" id="job_title" placeholder="Job Title"  name="job_title" maxlength="100">
+            </div>
+            
+            <div class="form-group">
+                <label class="" for="company">Company:</label>
+                <input type="text" class="form-control" id="company" placeholder="Company"  name="company" maxlength="100">
+            </div>
+                        
+            <div class="form-group">
+                <label class="" for="phone">Phone Number:</label>
+                <input type="tel" class="form-control" id="phone" placeholder="Phone Number"  name="phone" maxlength="14">
+            </div>
+                        
+            <div class="form-group">
+                <label class="" for="ip">IP Address:</label>
+                <input type="text" class="form-control" id="ip" placeholder="IP Address"  name="ip" maxlength="16">
+            </div>
+                        
+            <div class="checkbox">
+                <label><input type="checkbox" name="privacy" id="privacy"> Yes, I would like to be contacted by Spanning for newsletters, promotions, events and marketing activities. Please read our <a href="https://spanning.com/privacystatement/" title="Spanning Privacy Statement" target="_blank">privacy and data policy</a>.</label>
+            </div>
+
+            <div class="form-group">
+                <label class="" for="industry">Industry:</label>
+                <select class="form-control" id="industry">
+                    <option>Advertising/Media/Publishing</option>
+                    <option>Aerospace and Aviation</option>
+                    <option>Agriculture and Forestry</option>
+                    <option>Automotive</option>
+                    <option>Banking</option>
+                    <option>Communications</option>
+                    <option>Computer and Technology</option>
+                    <option>Education and Training</option>
+                    <option>Engineering and Construction</option>
+                    <option>Entertainment/Travel/Hospitality</option>
+                    <option>Financial Services</option>
+                    <option>Food and Beverage</option>
+                    <option>Government and Public Administration</option>
+                    <option>Healthcare</option>
+                    <option>IT</option>
+                    <option>Legal Solutions</option>
+                    <option>Manufacturing</option>
+                    <option>Marketing</option>
+                    <option>Non profit Organizations</option>
+                    <option>Pharmaceutical</option>
+                    <option>Planning</option>
+                    <option>Real Estate</option>
+                    <option>Retail</option>
+                    <option>Strategy</option>
+                    <option>Telecommunications</option>
+                    <option>Transportation and Shipping</option>
+                    <option>Utilities</option>
+                    <option>Other</option>
+                  </select>
+              </div>
+
+            <div class="form-group">
+                <label class="" for="address1">Address 1:</label>
+                <input type="text" class="form-control" id="address1" placeholder="Address 1"  name="address1" maxlength="300">
+            </div>
+                        
+            <div class="form-group">
+                <label class="" for="city">City:</label>
+                <input type="text" class="form-control" id="city" placeholder="City"  name="city" maxlength="300">
+            </div>
+            
+        <div class="form-group">
+            <label class="" for="zip">ZIP/Postal:</label>
+            <input type="text" class="form-control" id="zip" placeholder="ZIP/Postal"  name="zip" maxlength="5">
+        </div>
+
+        <div class="form-group">
+            <label class="" for="state">State:</label>
+            <input type="text" class="form-control" id="state" placeholder="State"  name="state" maxlength="50">
+        </div>
+
+        <div class="form-group">
+            <label class="" for="country">Country:</label>
+            <select class="form-control" id="country">
+                <option>United States</option>
+                <option>Canada</option>
+              </select>
+          </div>
+
+          <div class="form-group">
+            <label class="" for="interest_demo">Are you interested in scheduling a product demo?:</label>
+            <select class="form-control" id="interest_demo">
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+          </div>
+
+          <div class="form-group">
+            <label class="" for="company_size">What is your timeframe for a new Saas Backup solution?:</label>
+            <select class="form-control" id="company_size">
+                <option>Less than 1 month</option>
+                <option>1-2 months</option>
+                <option>2-3 months</option>
+                <option>3-6 months</option>
+                <option>Greater than 6 months</option>
+              </select>
+          </div>
+
+          <div class="form-group">
+            <label class="" for="timeframe">Number of Employees:</label>
+            <select class="form-control" id="timeframe">
+                <option>1-19</option>
+                <option>20-49</option>
+                <option>50-100</option>
+                <option>101-250</option>
+                <option>251-500</option>
+                <option>501-1,000</option>
+                <option>1,001-5,000</option>
+                <option>5,001-10,000</option>
+                <option>10,001+</option>
+              </select>
+          </div>
+          
+          <button type="submit" class="btn btn-default" id="submit">Submit</button>
+        </form>
+      </div>
+   </body>
+	
+</html>
