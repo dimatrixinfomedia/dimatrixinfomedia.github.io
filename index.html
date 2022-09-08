@@ -10,7 +10,8 @@
 		
       <script type = "text/javascript" language = "javascript">
          $(document).ready(function() {
-			
+			$("#message").html("");
+
             $("#submit").click(function(event){
                // Do global setting.
 
@@ -47,8 +48,7 @@
                 };
 
                 $.ajax(settings).done(function (response) {
-                console.log(response);
-                alert(response);
+                $("#message").append(JSON.stringify(data));
                 });
 
             });
@@ -217,6 +217,11 @@
           
           <button type="submit" class="btn btn-default" id="submit">Submit</button>
         </form>
+        <br>
+        
+        <h2>Lead Status:</h2>
+        <h3 class="message" id="message"></h3>
+
       </div>
    </body>
 	
