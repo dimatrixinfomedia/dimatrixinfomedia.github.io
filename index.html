@@ -15,25 +15,25 @@
                // Do global setting.
 
                 var form = new FormData();
-                form.append("post_key", "62decccd13536");
-                form.append("offer_id", "10908");
-                form.append("first_name", "Adarsh");
-                form.append("last_name", "Mittal");
-                form.append("email", "adarsh.mittal@dimatrixcorp.com");
-                form.append("job_title", "Director Technology");
-                form.append("company", "Dimatrix Info Media");
-                form.append("phone", "760-335-6236");
-                form.append("ip", "192.0.0.0");
-                form.append("privacy", "yes");
-                form.append("industry", "IT");
-                form.append("address1", "NJ");
-                form.append("city", "NJ");
-                form.append("zip", "12345");
-                form.append("state", "NJ");
-                form.append("country", "United States");
-                form.append("interest_demo", "Yes");
-                form.append("timeframe", "Less than 1 month");
-                form.append("company_size", "1-19");
+                form.append("post_key", $("#post_key").val());
+                form.append("offer_id", $("#offer_id option:selected").val());
+                form.append("first_name", $("#first_name").val());
+                form.append("last_name", $("#last_name").val());
+                form.append("email", $("#email").val());
+                form.append("job_title", $("#job_title").val());
+                form.append("company", $("#company").val());
+                form.append("phone", $("#phone").val());
+                form.append("ip", $("#ip").val());
+                form.append("privacy", document.getElementById('privacy').checked ? 'yes' : 'no');
+                form.append("industry", $("#industry option:selected").val());
+                form.append("address1", $("#address1").val());
+                form.append("city", $("#city").val());
+                form.append("zip", $("#zip").val());
+                form.append("state", $("#state").val());
+                form.append("country", $("#country").val());
+                form.append("interest_demo", $("#interest_demo option:selected").val());
+                form.append("timeframe", $("#timeframe option:selected").val());
+                form.append("company_size", $("#company_size option:selected").val());
 
                 var settings = {
                 "url": "https://offers.optimalfusion.com/post_offer_form.php",
@@ -48,6 +48,7 @@
 
                 $.ajax(settings).done(function (response) {
                 console.log(response);
+                alert(toString(response));
                 });
 
             });
