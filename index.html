@@ -10,8 +10,6 @@
 		
       <script type = "text/javascript" language = "javascript">
          $(document).ready(function() {
-			$("#message").html("");
-
             $("#submit").click(function(event){
                // Do global setting.
 
@@ -49,6 +47,7 @@
 
                 $.ajax(settings).done(function (response) {
                 $("#message").append(JSON.stringify(data));
+                alert(response);
                 });
 
             });
@@ -214,7 +213,7 @@
               </select>
           </div>
           
-          <button type="submit" class="btn btn-default" id="submit">Submit</button>
+          <button type="button" class="btn btn-default" id="submit">Submit</button>
         </form>
         <br>
 
